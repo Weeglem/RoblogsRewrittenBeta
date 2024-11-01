@@ -1,0 +1,32 @@
+<models>
+    <model>
+        <displayname>Staright Road</displayname>
+        <thumbnail>29</thumbnail>
+        <modelname>29</modelname>
+    </model>
+
+     <model>
+        <displayname>T-Junction</displayname>
+        <thumbnail>30</thumbnail>
+        <modelname>30</modelname>
+    </model>
+
+    <model>
+        <displayname>4-Way</displayname>
+        <thumbnail>31</thumbnail>
+        <modelname>31</modelname>
+    </model>
+
+    <model>
+        <displayname>Curved Road</displayname>
+        <thumbnail>32</thumbnail>
+        <modelname>32</modelname>
+    </model>
+
+    <model>
+        <displayname>Dead End Road</displayname>
+        <thumbnail>33</thumbnail>
+        <modelname>33</modelname>
+    </model>
+
+</models>

@@ -1,0 +1,55 @@
+<models>
+
+    <model>
+        <displayname>Race car</displayname>
+        <thumbnail>124</thumbnail>
+        <modelname>124</modelname>
+    </model>
+
+    <model>
+        <displayname>Shiny Rocket Car</displayname>
+        <thumbnail>125</thumbnail>
+        <modelname>125</modelname>
+    </model>
+
+    <model>
+        <displayname>Fast Rocket Car</displayname>
+        <thumbnail>126</thumbnail>
+        <modelname>126</modelname>
+    </model>
+
+    <model>
+        <displayname>Plane Car</displayname>
+        <thumbnail>127</thumbnail>
+        <modelname>127</modelname>
+    </model>
+
+    <model>
+        <displayname>Wooden Boat</displayname>
+        <thumbnail>128</thumbnail>
+        <modelname>128</modelname>
+    </model>
+
+    <model>
+        <displayname>Heli-Wars Jeep</displayname>
+        <thumbnail>129</thumbnail>
+        <modelname>129</modelname>
+    </model>
+
+    <model>
+        <displayname>Heli-Wars Helicopter</displayname>
+        <thumbnail>130</thumbnail>
+        <modelname>130</modelname>
+    </model>
+
+    <model>
+        <displayname>Tank</displayname>
+        <thumbnail>131</thumbnail>
+        <modelname>131</modelname>
+    </model>
+    
+
+
+
+
+</models>

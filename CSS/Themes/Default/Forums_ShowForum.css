@@ -1,0 +1,47 @@
+.Lastest-Comment{
+    font-size:11px;
+    text-align: center;
+}
+
+td{
+    text-align:left;
+    padding:3px 0;
+}
+
+.IconHeader{
+    display:none;
+}
+
+.IconRow{
+    width: 10px;
+}
+
+.GTF{
+    vertical-align: text-top;
+}
+
+.RowTitle{
+    max-width: 260px;
+}
+
+.RowOwner{
+    max-width: 100px;
+}
+
+.RowView,.RowReply{
+    max-width:50px;
+}
+
+.RowLast{
+    max-width: 140px;
+}
+
+.Float{
+    float:left;
+}
+
+
+.WordBreak{
+    word-break: auto-phrase;
+}
+

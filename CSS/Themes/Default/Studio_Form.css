@@ -1,0 +1,62 @@
+.FormContainer{
+    width:50%;
+    padding:8px 30px;;
+    margin: 10px auto;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.Alert{
+    font-weight:bold;
+    font-size:12px;
+}
+
+.Input_Container{
+    margin-top:11px;
+}
+
+.Actions{
+    margin-top:11px;
+}
+
+.LeftCheck{
+    margin-top: 15px;
+    text-align: left;
+}
+
+input[type="checkbox"]
+{
+    padding: 5px;
+}
+
+.padding{
+    padding:8px;
+}
+
+.InputInfo{
+    width: 130px;
+    display: inline-block;
+}
+
+fieldset{
+    margin-top: 10px;
+ border: 1px solid rgb(0, 0, 0);
+ padding-bottom: 5px;
+ padding-left: 15px;
+ padding-right: 15px;
+}
+
+legend{
+    font-size: 13px;
+}
+
+.Error,.error
+{
+    text-align: left;
+}
+
+@media screen and (max-width: 425px) {
+    form{}
+    .FormContainer {padding:3px; width: 100%;}
+
+}

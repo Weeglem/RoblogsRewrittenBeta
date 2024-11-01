@@ -1,0 +1,268 @@
+
+.Home_Important{
+    margin-right:18px;
+}
+
+.Home_Container{
+    margin-top:8px;
+}
+
+.Home_MyAvatar{
+    position: relative;
+    /*width: 240px;*/
+    /*left:-18px;*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Home_Actions a{
+    display:block;  
+    margin:10px 0;
+    color:black;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+.Home_Important{
+    width: 16%;
+    min-width: 158px;
+    padding:5px;
+    height: fit-content;
+}
+
+.Home_BlogEntry{
+    text-align: left;
+}
+
+.Home_BlogEntry_Title{
+    display:block;
+}
+
+.Home_Important{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Home_Actions{
+    margin:8px 0;
+}
+
+.Home_Wall{
+    padding:8px;
+    width: 100%;
+    text-align: left;
+}
+
+.Home_Container{
+    display:flex;
+}
+
+
+/*Friend List*/
+
+.Home_Wall_Friends_List{
+    display: flex;
+    flex-wrap: wrap;
+    padding:4px 0;
+}
+
+.Friends_List_Div{
+    text-align: center;
+    width: fit-content;
+}
+
+.Friends_List_Avatar{
+    width: 80px;
+}
+
+.Friends_List_Name{
+    font-size: 12px;
+    color:black !important;
+}
+
+.Friends_List_Div a{
+    display: block;
+}
+
+/*Games List*/
+
+.Home_Wall_Games_List{
+    display: flex;
+    flex-wrap: wrap;
+    padding:4px 0;
+    justify-content: flex-start;
+}
+
+.Games_List_Div{
+    margin:5px 2px;
+    text-align: left;
+    width: fit-content;
+
+}
+
+.Games_List_Name{
+    display: block;
+    font-weight: bold;
+    font-size:13px;
+}
+
+.Games_List_Desc{
+    font-size:12px;
+}
+
+.Favorites{
+    font-weight: bold;
+    color:red;
+}
+
+
+
+
+
+/**/
+
+.js{
+    justify-content: space-between;
+}
+
+.flex{
+    display:flex;
+}
+
+.Home_Wall_Details{
+    width: 70%;
+    padding-right:8px;
+}
+
+.Home_Wall_Feed{
+    border:1px solid black;
+    border-radius: 5px;
+    width: 33%;
+    padding:8px;
+    height: fit-content;
+}
+
+.Feed_List{
+    display: flex;
+    flex-wrap: wrap;
+    padding:4px 0;
+    justify-content: space-between;
+}
+
+.Home_Wall_Feed ul{
+    width: 100%;
+}
+
+.Feed_List_Div{
+    display:flex;
+}
+
+.Feed_Item{
+    width: 100%;
+    display: block;
+    font-size: 12px;
+    margin:0px 0;
+}
+
+
+.Feed_Item hr{
+    border:1px solid transparent;
+    margin-top: 20px;
+    clear: both;
+}
+
+.Feed_Item p{
+    font-size: 12px;
+}
+
+.FeedDate{
+    font-size:10px !important;
+    margin-top: 15px;
+}
+
+.Feed_Item figure{
+    float:left;
+}
+
+.FeedText{
+   margin:5px 0;
+}
+
+
+
+.Feed_Details{
+    font-size: 12px;
+}
+
+.Feed_IMG{
+}
+
+.Feed_Details_Body{
+    clear:both;
+    font-size:12px;
+}
+
+.Feed_Details_User{
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.Feed_Details_Says{
+    font-size: 12px;;
+}
+
+
+
+.Link{
+    color: blue !important;
+    text-decoration: none;
+}
+
+.Link:hover{
+    text-decoration: underline;
+}
+
+h2 a{
+    font-size: 14px;
+}
+
+/*Blog*/
+
+.Home_BlogEntry_Title{
+    color:black !important;
+    text-decoration: none;
+    font-size: 14px;
+    margin:8px 0;
+}
+
+.Black{
+    color: black !important;
+}
+
+
+
+@media screen and (max-width: 425px) {
+    .Home_Wall_Feed{display: none;}
+    .Home_Container{    flex-direction: column;}
+    .Home_Wall {width: auto; margin-top:8px;}
+    .Home_Wall_Details {
+        width: 100%; 
+        padding-right: 0px;
+    }
+    .Home_Important{ margin-right: 0px; width:auto;}
+    .Home_BlogEntry{ text-align:  center;}
+    .Games_List_Div{
+        margin: 3px 0;
+    }
+
+    .Home_MyAvatar {
+        left: auto;
+        margin:0 auto;
+    }
+
+    .Games_List_Div .IMGThumbnail {
+        width: 100%;
+    }
+}

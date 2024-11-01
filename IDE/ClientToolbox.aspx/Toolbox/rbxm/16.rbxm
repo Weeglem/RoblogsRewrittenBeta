@@ -1,0 +1,180 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Script" referent="RBX0">
+		<Properties>
+			<bool name="Disabled">false</bool>
+			<Content name="LinkedSource"><null></null></Content>
+			<string name="Name">LinkedLeaderboard</string>
+			<string name="Source">print(&quot;LinkedLeaderboard script version 5.00 loaded&quot;)
+
+stands = {}
+CTF_mode = false
+
+
+function onHumanoidDied(humanoid, player)
+	local stats = player:findFirstChild(&quot;leaderstats&quot;)
+	if stats ~= nil then
+		local deaths = stats:findFirstChild(&quot;Wipeouts&quot;)
+		deaths.Value = deaths.Value + 1
+
+		-- do short dance to try and find the killer
+
+		local killer = getKillerOfHumanoidIfStillInGame(humanoid)
+
+		handleKillCount(humanoid, player)
+	end
+end
+
+function onPlayerRespawn(property, player)
+	-- need to connect to new humanoid
+	
+	if property == &quot;Character&quot; and player.Character ~= nil then
+		local humanoid = player.Character.Humanoid
+			local p = player
+			local h = humanoid
+			humanoid.Died:connect(function() onHumanoidDied(h, p) end )
+	end
+end
+
+function getKillerOfHumanoidIfStillInGame(humanoid)
+	-- returns the player object that killed this humanoid
+	-- returns nil if the killer is no longer in the game
+
+	-- check for kill tag on humanoid - may be more than one - todo: deal with this
+	local tag = humanoid:findFirstChild(&quot;creator&quot;)
+
+	-- find player with name on tag
+	if tag ~= nil then
+		
+		local killer = tag.Value
+		if killer.Parent ~= nil then -- killer still in game
+			return killer
+		end
+	end
+
+	return nil
+end
+
+function handleKillCount(humanoid, player)
+	local killer = getKillerOfHumanoidIfStillInGame(humanoid)
+	if killer ~= nil then
+		local stats = killer:findFirstChild(&quot;leaderstats&quot;)
+		if stats ~= nil then
+			local kills = stats:findFirstChild(&quot;KOs&quot;)
+			if killer ~= player then
+				kills.Value = kills.Value + 1
+				
+			else
+				kills.Value = kills.Value - 1
+				
+			end
+		end
+	end
+end
+
+
+-----------------------------------------------
+
+
+
+function findAllFlagStands(root)
+	local c = root:children()
+	for i=1,#c do
+		if (c[i].className == &quot;Model&quot; or c[i].className == &quot;Part&quot;) then
+			findAllFlagStands(c[i])
+		end
+		if (c[i].className == &quot;FlagStand&quot;) then
+			table.insert(stands, c[i])
+		end
+	end
+end
+
+function hookUpListeners()
+	for i=1,#stands do
+		stands[i].FlagCaptured:connect(onCaptureScored)
+	end
+end
+
+function onPlayerEntered(newPlayer)
+
+	if CTF_mode == true then
+
+		local stats = Instance.new(&quot;IntValue&quot;)
+		stats.Name = &quot;leaderstats&quot;
+
+		local captures = Instance.new(&quot;IntValue&quot;)
+		captures.Name = &quot;Captures&quot;
+		captures.Value = 0
+
+
+		captures.Parent = stats
+
+		-- VERY UGLY HACK
+		-- Will this leak threads?
+		-- Is the problem even what I think it is (player arrived before character)?
+		while true do
+			if newPlayer.Character ~= nil then break end
+			wait(5)
+		end
+
+		stats.Parent = newPlayer
+
+	else
+
+		local stats = Instance.new(&quot;IntValue&quot;)
+		stats.Name = &quot;leaderstats&quot;
+
+		local kills = Instance.new(&quot;IntValue&quot;)
+		kills.Name = &quot;KOs&quot;
+		kills.Value = 0
+
+		local deaths = Instance.new(&quot;IntValue&quot;)
+		deaths.Name = &quot;Wipeouts&quot;
+		deaths.Value = 0
+
+		kills.Parent = stats
+		deaths.Parent = stats
+
+		-- VERY UGLY HACK
+		-- Will this leak threads?
+		-- Is the problem even what I think it is (player arrived before character)?
+		while true do
+			if newPlayer.Character ~= nil then break end
+			wait(5)
+		end
+
+		local humanoid = newPlayer.Character.Humanoid
+
+		humanoid.Died:connect(function() onHumanoidDied(humanoid, newPlayer) end )
+
+		-- start to listen for new humanoid
+		newPlayer.Changed:connect(function(property) onPlayerRespawn(property, newPlayer) end )
+
+
+		stats.Parent = newPlayer
+
+	end
+
+end
+
+
+function onCaptureScored(player)
+
+		local ls = player:findFirstChild(&quot;leaderstats&quot;)
+		if ls == nil then return end
+		local caps = ls:findFirstChild(&quot;Captures&quot;)
+		if caps == nil then return end
+		caps.Value = caps.Value + 1
+
+end
+
+
+findAllFlagStands(game.Workspace)
+hookUpListeners()
+if (#stands &gt; 0) then CTF_mode = true end
+game.Players.ChildAdded:connect(onPlayerEntered)</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+</roblox>

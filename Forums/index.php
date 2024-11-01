@@ -1,0 +1,1 @@
+<?php exit(header("Location:./ShowForumGroup.php"));?>

@@ -1,0 +1,93 @@
+<models>
+    <model>
+        <displayname>Reddish brown 2x4</displayname>
+        <thumbnail>1</thumbnail>
+        <modelname>1</modelname>
+    </model>
+
+    <model>
+        <displayname>Black 2x4</displayname>
+        <thumbnail>2</thumbnail>
+        <modelname>2</modelname>
+    </model>
+
+    <model>
+        <displayname>Dark grey  2x4</displayname>
+        <thumbnail>3</thumbnail>
+        <modelname>3</modelname>
+    </model>
+
+    <model>
+        <displayname>Medium stone grey 2x4</displayname>
+        <thumbnail>4</thumbnail>
+        <modelname>4</modelname>
+    </model>
+
+    <model>
+        <displayname>Grey 2x4</displayname>
+        <thumbnail>5</thumbnail>
+        <modelname>5</modelname>
+    </model>
+
+    <model>
+        <displayname>Earth orange 2x4</displayname>
+        <thumbnail>6</thumbnail>
+        <modelname>6</modelname>
+    </model>
+
+    <model>
+        <displayname>Bright blue 2x4</displayname>
+        <thumbnail>7</thumbnail>
+        <modelname>7</modelname>
+    </model>
+
+    <model>
+        <displayname>Sand green 2x4</displayname>
+        <thumbnail>8</thumbnail>
+        <modelname>8</modelname>
+    </model>
+
+    <model>
+        <displayname>Dark green 2x4</displayname>
+        <thumbnail>9</thumbnail>
+        <modelname>9</modelname>
+    </model>
+
+    <model>
+        <displayname>Bright red 2x4</displayname>
+        <thumbnail>10</thumbnail>
+        <modelname>10</modelname>
+    </model>
+
+    <model>
+        <displayname>Bright orange 2x4</displayname>
+        <thumbnail>11</thumbnail>
+        <modelname>11</modelname>
+    </model>
+
+    <model>
+        <displayname>Bright yellow 2x4</displayname>
+        <thumbnail>12</thumbnail>
+        <modelname>12</modelname>
+    </model>
+
+    <model>
+        <displayname>Brick yelow 2x4</displayname>
+        <thumbnail>13</thumbnail>
+        <modelname>13</modelname>
+    </model>
+
+    <model>
+        <displayname>Light yellow 2x4</displayname>
+        <thumbnail>14</thumbnail>
+        <modelname>14</modelname>
+    </model>
+
+    <model>
+        <displayname>White 2x4</displayname>
+        <thumbnail>15</thumbnail>
+        <modelname>15</modelname>
+    </model>
+
+
+</models>

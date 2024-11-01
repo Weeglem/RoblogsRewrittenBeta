@@ -1,0 +1,133 @@
+main{
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+body{
+    overflow-y: scroll;  
+}
+
+select{
+    padding:0;
+    margin:0;
+    width: 100%;
+    font-family: Verdana, Sans-Serif;
+    font-size: 9pt;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.Toolbox_Body{
+    background-color: white;
+    display: flex;
+    padding: 3px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 0px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 8px;
+}
+
+.Toolbox_Flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.Toolbox_Pagination{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Item{
+    width: 78px;
+    height: 78px;
+    display:block;
+    margin:3px;
+    border: 2px solid transparent;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsU6xWWE0uz5LdpG7pEbo2Ueef1vVVD_42zw&s");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Item:hover{
+    border:2px outset Window;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    max-width: 78px;
+}
+
+select{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.Name_Search{
+    width: 100%;
+}
+
+#AssetName{
+    height: 14px;   
+}
+
+#AssetName{
+    width: 100%;;
+    margin-right:3px;
+
+}
+
+#SearchTable{
+    width: 100%;
+}
+
+#SearchOnline{
+    border: 1px solid black;
+    background: none;
+    align-items: center;
+    background: white;
+    width: 60px;
+    cursor: pointer;
+}
+
+#SearchOnline:hover{
+    font-weight: bold;
+}
+
+.Search_Button{
+    text-align:right;
+}
+
+td{
+    padding:0;
+}
+
+#SearchTable{
+    margin-top: 8px;
+    display:none;
+}
+
+.NavLink{
+    font-size: 14px;
+    text-decoration: none;
+    color:blue;
+}
+
+
+.NavLink:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+

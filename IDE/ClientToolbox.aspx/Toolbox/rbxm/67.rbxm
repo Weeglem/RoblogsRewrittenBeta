@@ -1,0 +1,113 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="HopperBin" referent="RBX0">
+		<Properties>
+			<bool name="Active">false</bool>
+			<token name="BinType">0</token>
+			<string name="Name">JetBoots</string>
+			<Content name="TextureId"><url>rbxasset://Textures\Rocketboots.png</url></Content>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="Script" referent="RBX1">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Jetboots</string>
+				<ProtectedString name="Source">print(&quot;Jet Boots loaded&quot;)
+bin = script.Parent
+walking = false
+reloadtime = 0
+local thrust = Instance.new(&quot;BodyVelocity&quot;)
+local velocity = 0
+local max_velocity = 30
+local flight_time = 9
+
+function onStart()
+	print(&quot;start walking&quot;)
+	walking = true
+	reloadtime = 8.0
+	thrust.Parent = game.Players.LocalPlayer.Character.PrimaryPart
+	thrust.velocity = Vector3.new(0,velocity,0)
+	thrust.maxForce = Vector3.new(0,4e+003,0)
+	local sound = game.Players.LocalPlayer.Character.PrimaryPart:findFirstChild(&quot;JetbootSound&quot;)
+
+	if sound == nil then
+		sound = Instance.new(&quot;Sound&quot;)
+		sound.Name = &quot;JetbootSound&quot;
+		sound.SoundId = &quot;rbxasset://sounds\\Rocket whoosh 01.wav&quot;
+		sound.Looped = true
+		sound.Parent = game.Players.LocalPlayer.Character.PrimaryPart
+	end
+
+	sound:play()
+end
+
+function onEnd()
+	print(&quot;stop walking&quot;)
+	walking = false
+	thrust.Parent = nil
+	local sound = game.Players.LocalPlayer.Character.PrimaryPart:findFirstChild(&quot;JetbootSound&quot;)
+
+	if sound ~= nil then 
+		sound:stop() 
+	end
+
+	wait(reloadtime)
+	reloadtime = 0
+end
+
+function onButton1Down(mouse)
+	if reloadtime &gt; 0 then 
+		return 
+	end
+
+	if walking == true then 
+		return 
+	end
+
+	onStart()
+	mouse.Icon = &quot;rbxasset://textures\\ArrowFarCursor.png&quot;
+	local time = 0
+	while walking == true do
+		--onWalk()
+		wait(.2)
+		time = time + .2
+		velocity = (max_velocity  * (time / flight_time)) + 3
+		thrust.velocity = Vector3.new(0,velocity,0)
+
+		if time &gt; flight_time then 
+			onButton1Up(mouse) 
+		end
+	end
+end
+
+function onButton1Up(mouse)
+	onEnd()
+	mouse.Icon = &quot;rbxasset://textures\\ArrowCursor.png&quot;
+end
+
+function onSelected(mouse)
+	print(&quot;ghostwalker selected&quot;)
+	
+	if reloadtime &gt; 0 then
+		mouse.Icon = &quot;rbxasset://textures\\ArrowFarCursor.png&quot;
+	else
+		mouse.Icon = &quot;rbxasset://textures\\ArrowCursor.png&quot;
+	end
+
+	mouse.Button1Down:connect(function() 
+		onButton1Down(mouse) 
+	end)
+
+	mouse.Button1Up:connect(function() 
+		onButton1Up(mouse) 
+	end)
+end
+
+bin.Selected:connect(onSelected)</ProtectedString>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

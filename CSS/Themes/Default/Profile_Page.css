@@ -1,0 +1,424 @@
+.User_Info_Div{
+    border:1px solid black;
+    padding:20px 8px;
+    text-align: center;
+    min-height: 290px;
+    font-size: 12px;
+    
+}
+/*
+.Left_Side_Div{
+    width: 50%;
+}
+
+.Right_Side_Div{
+    width: 46%;
+}*/
+
+
+.Left_Side_Div{
+    width: 50%;
+}
+
+.Right_Side_Div{
+    width: 45%;
+}
+
+/*BLUE CONTAINER PAGE*/
+
+.User_IMG{
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+}
+
+.User_About{
+    font-size: 12px;;
+    margin-bottom: 5px;
+}
+
+.Last_Seen
+{
+    font-family: Verdana;
+    font-size: 12px;
+    margin: 10px 0;
+    color:gray;
+}
+
+.Green{
+    color:green;
+    font-weight: bold;
+}
+
+.User_Action_Buttons{
+    margin-top:20px;
+}
+
+.User_Name{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.User_Link{
+    font-size: 12px;
+}
+
+.User_About{
+    max-width: 320px;
+    margin:8px auto;
+}
+
+.User_Profile_Container{
+    margin-top:8px;
+}
+
+.Content_Marker{
+    color:red;
+    background:yellow;
+}
+
+.User_Profile_Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.User-DontAnnoyMe{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+/*USER STADITIC*/
+
+.User_Statics_Div{
+    width: 100%;
+    border:1px solid black;
+    margin:10px 0;
+}
+
+
+/*GAMES SHOWCASE*/
+
+
+.Accordion-Games-Normal{
+    text-align: left;
+    background-color: buttonface;
+    padding:2px 5px;
+    font-size: 13px;
+    color: black;
+    border: solid 1px #777;
+    border-left: 0;
+    border-right: none;
+    font-weight: normal !important;
+}
+
+.Accordion-Games-Normal:hover{
+    background:#c7d7ef !important;
+    cursor:pointer;
+}
+
+.Accordion-Games-Active{
+    font-weight: bold !important;
+}
+
+
+
+
+#games-accordion h3{
+    margin:0;
+}
+
+.Accordion-Games-Inside{
+    border: solid 1px #777;
+    border-top: none;
+    border-bottom: none;
+}
+
+.Showcase{
+    color:white;
+    padding:3px 0;
+}
+
+
+
+.Games-Showcase{
+    border-bottom: solid 1px #000000;
+    margin-bottom: 10px;
+}
+
+#games-accordion{
+    border: 1px solid black;
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.Games-Showcase .Showcase{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid black;
+    border-bottom: 0;
+}
+
+.Game-Showcase-Thumb{
+    width: 100%;
+    height: auto;
+}
+
+
+
+.Accordion-Game-Display{
+    padding:8px;
+    height:343px;
+    overflow: hidden;
+    transition: height 0.4s ease-out;
+}
+
+.Accordion-Game-Display-Hide{
+    height: 0px !important;
+    padding:0px !important;
+}
+
+.Game-Showcase-About{
+    font-size: 12px;
+    text-align: left;
+    overflow: auto;
+    height: 60px;
+    border: 1px solid #c5c5c5;
+    padding:3px;
+}
+
+
+
+
+/*
+.Accordion-Games-Container{
+
+}
+
+.Accordion-Games-Default{
+    text-align: left;
+    background-color: buttonface;
+    padding:2px 5px;
+    font-size: 13px;
+    color: black;
+    border: solid 1px #777;
+}
+
+.Accordion-Games-Default:hover{
+    background:#c7d7ef !important;
+    cursor:pointer;
+}
+
+.Accordion-Games-Active{
+    font-weight: bold;
+}
+
+#games-accordion h3{
+    margin:0;
+}
+
+.Accordion-Games-Inside{
+    border: solid 1px #777;
+    border-top: none;
+    border-bottom: none;
+}
+
+.Showcase{
+    color:white;
+    padding:3px 0;
+}
+
+.Games-Showcase{
+    border-bottom: solid 1px #777;
+    margin-bottom: 10px;
+}
+
+.Game-Showcase-Thumb{
+    width: 100%;
+    height: auto;
+}
+
+
+.Accordion-Game-Display{
+    padding:8px;
+}
+
+.Game-Showcase-About{
+    font-size: 12px;
+    text-align: left;
+    overflow: auto;
+    height: 60px;
+    border: 1px solid #c5c5c5;
+    padding:3px;
+}
+*/
+
+
+/*Lastest Models*/
+.Assets-Showcase-Div
+{
+    border:1px solid black;
+}
+
+.Assets-Padding{
+    padding:4px;
+}
+
+.Assets-Padding select{
+    width:120px;
+    padding:3px;
+}
+
+.Assets-Showcase-Flex{
+    margin:5px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.Asset-Item{
+    padding:3px;
+    width: 115px;
+    height: fit-content;
+}
+
+.Asset-Name{
+    font-size: 12px;
+}
+
+.InventoryCall{
+    font-size: 12px;
+}
+
+.User_Statics_Flex{
+    max-width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 4px;
+    margin: 0 auto;
+}
+
+.Assets_Pagination{
+    margin:5px auto;
+    justify-content: center;
+}
+
+/*Inventory*/
+.Inventory-Actions{
+    margin-top:5px;
+}
+
+.Assets_Pagination{
+    margin-top:10px;
+}
+
+#Back-Button-Assets{
+    margin-left: 0;
+}
+
+.InventoryCall{
+    margin-top:15px;
+    font-size: 13px;
+}
+
+
+
+/*Social Data*/
+
+#UserSocial_Card_Invoke{
+    cursor:pointer;
+}
+
+.User_Social_Info{
+    padding:0px 5px;
+    max-height: 200px;
+    transition:max-height 0.6s ease-out;
+    overflow: hidden;
+}
+
+.UserSocial_Info{
+    text-align: left;
+    margin:8px 0;
+    font-size: 14px; 
+    transition: 0;
+
+}
+
+.UserSocial_Off{
+    max-height:50px;
+    overflow: hidden;
+}
+
+
+
+/*Friends Page*/
+
+.User_Friend_Div{
+    margin:4px 0;
+}
+
+.User_Friend_IMG{
+    width: 96px;
+}
+
+.User_Friend_Name{
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/*Badges*/
+
+.Badge_Icon{
+    width: 64px;
+    height: 64px;
+    padding:3px;
+}
+
+
+
+/*Cards*/
+
+.Card-Display{
+    max-height:600px;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.Card-Display-Hide{
+    max-height: 0px !important;
+    padding:0px !important;
+}
+
+@media screen and (max-width: 425px) {
+
+    .User_Profile_Container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .Left_Side_Div,.Right_Side_Div {
+        width: 100%;
+        margin-bottom:10px;
+    }
+
+    .Accordion-Games-Default{
+        height:20px;
+        line-height:1.5;
+    }
+
+    .Game-Showcase-About{
+        font-size: 11px;
+    }
+
+    .GamesThumbnail_Big{
+        width:100%;
+    }
+}
+

@@ -1,0 +1,18 @@
+.FriendPanel{
+    margin:5px 0;
+    text-align: center;
+    width:154px;
+    border:2px solid transparent;
+    padding:3px;
+}
+
+.FriendPanel a{
+    display: block;
+    width: fit-content;
+    margin: 5px auto;
+    font-size: 13px;
+}
+
+.FriendPanel:hover{
+    border:2px outset Window;  
+}

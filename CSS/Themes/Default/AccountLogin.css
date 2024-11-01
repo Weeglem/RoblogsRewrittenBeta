@@ -1,0 +1,34 @@
+label,button{
+    display:block;
+}
+
+input{
+    max-width: 300px;
+    min-width: 250px;
+    height: 20px;
+}
+
+form{
+    padding:8px;
+    width: fit-content;
+    border:1px solid black;
+    text-align: left;
+    margin:20px auto;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top:20px;
+}
+
+button{
+    max-width: 300px;
+    min-width: 250px;
+    margin: 20px 0;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 20px;
+}

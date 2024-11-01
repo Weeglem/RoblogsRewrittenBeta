@@ -1,0 +1,18 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Sky" referent="RBX0">
+		<Properties>
+			<bool name="CelestialBodiesShown">true</bool>
+			<string name="Name">Gotham City</string>
+			<Content name="SkyboxBk"><url>rbxasset://../../../shareddata/sky/17049156.png</url></Content>
+			<Content name="SkyboxDn"><url>rbxasset://../../../shareddata/sky/17049174.png</url></Content>
+			<Content name="SkyboxFt"><url>rbxasset://../../../shareddata/sky/17049190.png</url></Content>
+			<Content name="SkyboxLf"><url>rbxasset://../../../shareddata/sky/17049201.png</url></Content>
+			<Content name="SkyboxRt"><url>rbxasset://../../../shareddata/sky/17049218.png</url></Content>
+			<Content name="SkyboxUp"><url>rbxasset://../../../shareddata/sky/17049227.png</url></Content>
+			<int name="StarCount">3000</int>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+</roblox>

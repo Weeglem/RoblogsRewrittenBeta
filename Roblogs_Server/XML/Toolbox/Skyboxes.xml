@@ -1,0 +1,44 @@
+<models>
+    <model>
+        <displayname>Alien Red</displayname>
+        <thumbnail>42</thumbnail>
+        <modelname>42</modelname>
+    </model>
+
+    <model>
+        <displayname>Broken Sky</displayname>
+        <thumbnail>43</thumbnail>
+        <modelname>43</modelname>
+    </model>
+
+    <model>
+        <displayname>Dark Sky</displayname>
+        <thumbnail>44</thumbnail>
+        <modelname>44</modelname>
+    </model>
+
+    <model>
+        <displayname>Walls of Autumn</displayname>
+        <thumbnail>45</thumbnail>
+        <modelname>45</modelname>
+    </model>
+
+    <model>
+        <displayname>Starry Night</displayname>
+        <thumbnail>46</thumbnail>
+        <modelname>46</modelname>
+    </model>
+
+    <model>
+        <displayname>Gotham City</displayname>
+        <thumbnail>47</thumbnail>
+        <modelname>47</modelname>
+    </model>
+
+    <model>
+        <displayname>Bliss</displayname>
+        <thumbnail>48</thumbnail>
+        <modelname>48</modelname>
+    </model>    
+
+</models>

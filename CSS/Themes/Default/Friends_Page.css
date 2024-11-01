@@ -1,0 +1,41 @@
+.Friends_Cont{
+    margin-top: 10px;
+}
+
+.Friends_Container{
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Friend_Div{
+    margin: 5px 0;
+    text-align: center;
+    width: 148px;
+    border: 2px solid transparent;
+    padding: 3px;
+}
+
+.Friend_Div:hover{
+    border:2px solid Window;
+}
+
+.Friend_Name{
+    margin-top: 5px;
+    font-size: 12px;
+    color:blue;
+}
+
+
+@media screen and (max-width: 425px) {
+    .Friend_Div{
+        width: auto;
+    }
+
+    .Friends_Container {
+        padding: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

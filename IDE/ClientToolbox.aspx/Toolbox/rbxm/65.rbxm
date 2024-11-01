@@ -1,0 +1,77 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="HopperBin" referent="RBX0">
+		<Properties>
+			<bool name="Active">false</bool>
+			<token name="BinType">0</token>
+			<string name="Name">SoulAsylum</string>
+			<Content name="TextureId"><url>rbxasset://Textures\HalloweenAsylum.png</url></Content>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="Script" referent="RBX1">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">SeekAsylum</string>
+				<ProtectedString name="Source">print(&quot;SouAsylum Loaded&quot;)
+bin = script.Parent
+
+function TeleportPlayer(player)
+	
+	
+	local x = 7.5
+	local z = -79.5
+	local y = 90 + math.random(0, 20)
+
+	local char = player.Character.Head
+
+	local cf = char.CFrame
+
+	local lx = 0
+	local ly = y
+	local lz = 0
+
+	char.CFrame = CFrame.new(Vector3.new(x,y,z), Vector3.new(lx,ly,lz))	
+end
+
+
+enabled = true
+function onButton1Down(mouse)
+	if not enabled then
+		return
+	end
+
+	enabled = false
+	mouse.Icon = &quot;rbxasset://textures\\ArrowFarCursor.png&quot;
+
+	
+	sound = game.Workspace:findFirstChild(&quot;AsylumSound&quot;)
+	if sound == nil then 
+		sound = Instance.new(&quot;Sound&quot;)
+		sound.Name = &quot;AsylumSound&quot;
+		sound.SoundId = &quot;rbxasset://sounds\\Launching rocket.wav&quot;
+		sound.Parent = game.Workspace	
+	end
+	sound:play()
+
+	TeleportPlayer(game.Players.LocalPlayer)
+
+	wait(30)
+	mouse.Icon = &quot;rbxasset://textures\\ArrowCursor.png&quot;
+	enabled = true
+
+end
+
+function onSelected(mouse)
+	print(&quot;asylum selected&quot;)
+	mouse.Icon = &quot;rbxasset://textures\\ArrowCursor.png&quot;
+	mouse.Button1Down:connect(function() onButton1Down(mouse) end)
+end
+
+bin.Selected:connect(onSelected)</ProtectedString>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

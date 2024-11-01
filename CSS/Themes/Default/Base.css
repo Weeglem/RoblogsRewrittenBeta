@@ -1,0 +1,812 @@
+html{ 
+    margin:0 auto; padding:0; 
+}
+
+body{
+    font-family: tahoma, helvetica, sans-serif;
+    margin:0 auto;
+    padding:0;
+    text-align: center;
+    max-width: 950px; 
+    background: 
+    url(http://localhost/IMG/bg_clouds.jpg) no-repeat center top, 
+    #f8fcff url(http://localhost/IMG/bg_gradient.jpg) repeat-x top;
+}
+
+.container{
+    
+}
+
+h3{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+th{ font-weight: normal; }
+
+.banner{
+    height: 89px;
+    background-image: url("http://roblogs.net/Roblogs_files/RoblogsBanner10.png");
+    border: 1px solid black;
+    margin:0;
+    
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    
+}
+
+.BannerContent{
+    background:rgba(0, 0, 0, 0);
+    border:#777;
+    position: relative;
+    top: 0px;
+    padding:3px;
+}
+
+.SessionBanner{
+    margin:0;  
+    padding:0 7px;
+    /*color:rgb(255, 255, 255);*/
+    font-weight: bold;
+    font-size:12px;
+    text-decoration: none;
+}
+
+.UserContainerlink{
+    color:gray !important;
+}
+
+.SessionBannerLoggedOut{
+    margin:0;  
+    padding:0 7px;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    font-size:12px;
+    text-decoration: none;
+}
+
+.SessionBanner:hover{
+    text-decoration: underline;
+}
+
+.header{
+    white-space:nowrap;
+    border-top:none;
+}
+
+.header img{
+    white-space:nowrap;
+}
+
+
+/*NavBar*/
+
+.navbar{
+    height:35px;
+    
+    border: 1px solid black;
+    border-top: 0;
+    text-align: center;
+    line-height: 1.6;
+    margin:0;
+}
+
+.navbar span{
+    font-size:20px;
+    color:white;
+}
+
+.NavbarNotification{
+    background:#ffb3c0;;
+    height:25px;
+}
+
+.NavbarNotification span{
+    color:black;
+    font-size:14px;
+    font-weight: bold;
+}
+
+.Banner_LoggedInfo{
+    padding:5px;
+}
+
+
+.Banner_UserContainer{
+    background:white;
+    font-size: 12px;
+    padding:5px;
+    float:right;
+    color:rgb(124, 124, 124);
+}
+
+.Banner_UserInfo{
+    background:blue;
+    font-size: 12px;
+    padding:5px;
+    float:left;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*AAA*/
+
+p{
+    font-size:15px;
+}
+
+.header a img{
+border:none;
+outline:none;
+}
+
+.header span a{
+    color:white;
+    text-decoration:none;
+}
+
+.header span a:hover{
+    text-decoration: underline;
+}
+
+body{
+    /*margin-top:10px;*/
+}
+
+.container{
+    /*margin-top:8px;*/
+    max-width: 1200px;
+    margin-bottom: 12px;
+    margin-top:5px;
+    /*margin: 8px 0;*/
+}
+
+.ContainerBG{
+    /*background:rgb(238, 236, 236);*/
+}
+
+
+.OldBlue{
+    background-color:#A1B8D8;
+}
+
+.BrightOldBlue{
+    background-color:#c7d7ef;
+}
+
+.Blue{
+    background-color:#6e99c9;
+}
+
+.greyborder{
+    border:1px solid #949494;
+}
+
+
+
+.Desktop{
+    display:block;
+}
+
+footer{
+    max-width: 1200px;
+    color:black;
+    font-size: 14px;
+}
+
+footer .GoTop{
+    font-weight: bold;
+}
+
+footer a{
+    color:black;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+
+.Button, button{
+    margin-right: 8px;
+    padding: 4px;
+    background-color: buttonface;
+    font-size: 13px;
+    color: black;
+    border: solid 1px #777;
+    padding: 4px;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.Button:hover, button:hover{
+    font-weight: 100;
+    background-color: rgb(161, 184, 216);
+    color:white;
+    text-decoration: none;
+}
+
+.error,.Error{
+    color:red;
+    font-size:12px;
+    margin: 5px 0;
+}
+
+.BlackBorder{
+    border:1px solid black;
+}
+
+.border{
+    border-radius: 5px;
+}
+
+.BlueBorder{
+    border:4px solid #91a4e7;
+    border-radius: 5px;
+    outline: 1px solid blue;
+}
+
+
+
+h3{
+    font-size:16px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+/*Thumbnails*/
+
+.WorkshopThumbnail_Normal{
+    width: 220px;
+    height: 190px;
+}
+
+.GamesThumbnail_Small{
+    width:165px;
+    height:130px;
+}
+
+.GamesThumbnail_Medium{
+    width: 280px;
+    height:220px;
+}
+
+.GamesThumbnail_Big{
+    width: 390px;
+    height: 271px;
+}
+
+/*Avatars*/
+
+.AvatarsThumbnail_Small{
+    width: 80px;
+}
+
+.AvatarsThumbnail_Medium{
+    width: 120px;
+}
+
+
+.AvatarsThumbnail_Big{
+    width:240px;
+}
+
+/*Assets*/
+
+.AssetThumb_Inventory{
+    width: 115px;
+    height: 105px; 
+}
+
+.AssetThumb_Small{
+    width: 150px;
+    height: 140px;
+}
+
+.AssetThumb_Big{
+    
+}
+
+/*Groups*/
+
+.Group-Icon_Small {
+    width: 110px;
+    height: 100px;
+}
+
+
+.Group-Icon_Medium {
+    width: 150px;
+    height: 130px;
+}
+
+
+/*Online Icon*/
+
+.UserOnline{
+    display: inline-block;
+    width:7px;
+    height: 7px;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.Online{
+    background-image: url("http://localhost/IMG/user_IsOnline.gif");
+}
+
+.Offline{
+    background-image: url("http://localhost/IMG/user_IsOffline.gif");
+}
+
+
+.Ban-Container{
+    border:1px solid black;
+    padding:10px 20px;
+    text-align:left;
+    width:60%;
+    white-space: pre-line;
+    margin:10px auto;
+}
+
+.BanNote{
+    padding:5px 5px;
+    border:1px solid black;
+}
+
+.BanFinal{
+    font-size:11px !important;
+}
+
+
+.Ban-Container h1{
+    text-align: center;
+}
+
+.Ban-Container p,.Ban-Container a{
+    font-size:12px;
+}
+
+
+
+.Ban-Buttons form{
+    text-align:center;
+    white-space: normal;
+}
+
+.Ban-Buttons{
+    white-space: normal;
+    text-align: center;
+    margin:0 auto;
+}
+
+.Ban-Buttons form button{
+    margin-top:10px;
+}
+
+
+
+
+
+
+
+
+.Link{
+    color: blue !important;
+    text-decoration: none;
+    
+}
+
+.Link:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.FakeLabel {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 7px;
+}
+
+.Action_Button{
+    margin-top:5px;
+    display:block;
+    line-height: 1.8;
+    border: 1px solid #6f211a;
+    border-radius: 5px;
+    width: 90%;
+    text-align: center;
+    color:black;
+    font-size: 16px;
+    text-decoration: none;
+    height: 30px;
+    padding:0 10px;
+    background-image: url("http://localhost/IMG/Button Background.jpg");
+    background-position-y: center;
+    background-size: contain;
+    font-family: cursive;
+}
+
+.Mobile{
+    display: none;
+}
+
+.Mobile-Navbar{
+    display: none;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.Hidden{
+    display:none;
+}
+
+.Javascript_Alert{
+    background: #ffd22e;
+    border:1px solid black;
+    border-radius: 5px;
+    margin-top:10px;
+    padding:3px;
+    margin-bottom:10px;
+}
+
+.Input_Container{
+    display: grid;
+    margin-bottom:5px;
+}
+
+input,textarea{ 
+    margin: 0;
+    padding: 0;   
+}
+
+label{
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom:5px; 
+}
+
+.label{
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom:5px;
+}
+
+.Actions{
+    text-align:right;
+    padding:0;
+    margin-top:10px;
+    margin-bottom: 0;
+}
+
+.Actions button{
+    margin-right: 0;
+}
+
+.Pagination{
+    margin-top:20px;
+}
+
+.Paginatior{
+    font-size:14px;
+    font-weight: bold;
+    color:black;
+    text-decoration: none;
+    margin:5px;
+    padding-top:5px;
+}
+
+.Pagination_Bottom{
+    margin-top:10px;
+}
+
+.Paginatior:hover, .ActualPage{
+    font-size:14px;
+    color:purple;
+    text-shadow: 0 0 1px purple, 0 0 1px purple;
+}
+
+.Search_ListItem{
+    font-size: 14px;
+    text-decoration: none;
+    color:blue;
+    line-height: 1;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.Search_ListItem:hover{
+    text-decoration: underline;
+}
+
+.Active_ListItem{
+    padding-left:20px;
+    background-image: url(http://localhost/IMG/games_bullet.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.Side_Menu{
+    text-align: left;
+    margin-right: 18px;
+    padding: 8px;
+    width: 180px;
+    height: fit-content;
+}
+
+.Main_Menu{
+    text-align: left;
+    padding: 8px;
+    width: 800px;
+}
+
+.Client-Icon{
+    width:32px;
+    height:32px;
+    display:block;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;  
+    float:left;
+}
+
+.Novetus{
+    background-image: url(http://localhost/IMG/Compatible/Novetus.png);
+}
+
+.ORRH{
+    width: 54px;
+    background-image: url(http://localhost/IMG/Compatible/ORRH.png);
+}
+
+.Roblox{
+    background-image: url(http://localhost/IMG/Compatible/Roblox.jpeg);
+}
+
+figcaption{
+    text-align: left;
+    font-size: 12px;
+    color:gray;
+    border:1px solid gray;
+    padding:3px;
+    margin-top:3px;
+}
+
+.ShareLink{
+    font-weight: bold;
+    font-size: 12px;
+    width: fit-content;
+}
+
+.ShareLink:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*Card navegation*/
+
+.CardBody{
+    border-radius: 0;
+    z-index: 6;
+    justify-content: center;
+    padding:5px;
+    position: relative;
+}
+
+.CardBody_Flex{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.CardBody figure{
+    text-align: center;
+}
+
+
+.CardBody figure{
+    margin:2px;
+}
+
+.CardBody-Tags{
+    z-index: 0;
+    position: relative;
+}
+
+.CardBody-Tags input{
+    padding:0 10px;
+    width: 100px;
+    height: 25px;
+    font-size: 16px;
+    border:4px solid #91a4e7;
+    background:#91a4e7;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom:0;
+    outline: 1px solid blue;
+}
+
+.CardBody-Selected{
+    font-weight: bold;
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+}
+
+.CardBody-Tags{
+    z-index: 0;
+    position: relative;
+}
+
+.Group-Members-Allies-Div{
+    margin-top: 15px;
+}
+
+.CardEntry{
+    display: flex;
+    justify-content: space-between;
+}
+
+.JSPagination{
+    display:flex;
+}
+
+
+.NavLink{
+    font-size: 14px;
+    text-decoration: none;
+    color:blue;
+    margin-left: 10px;
+}
+
+.NavLink:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.NavLink-Pagination{
+    display: flex;
+}
+
+.CardNav{
+    display: flex;
+    align-items: center;
+}
+
+.CardNav select{
+    margin-left: 10px;
+    min-width: 150px;
+}
+
+figure a{
+    text-decoration: none;
+    color:blue;
+}
+
+figure a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+.Website_MessageBox_Container{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(100, 100, 100, 0.25);
+    display: block;  
+}
+
+.Website_MessageBox_Window{
+    background-color: #fff;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    top: 30%;
+    bottom: 30%;
+    border: 1px solid black;
+    padding: 14px;
+}
+
+.Website_MessageBox_Window button{
+    background: none;
+    padding: 5px 8px;
+}
+
+.Website_MessageBox_Window button:hover{
+    background:#A1B8D8;
+}
+
+.Website_MessageBox_Window p{
+    font-size: 12px;
+}
+
+.Website_MessageBox_flex{
+    margin-top: 10px;
+}
+
+.NavBar-SubMenu{
+    z-index: 50 !important;
+    background-color: #6e99c9;
+    width: 100px;
+    text-align: left;
+    padding:5px;
+    position: absolute;
+    display: none;
+}
+
+.NavBar-SubMenu a{
+    display: block;
+}
+
+.Web-Desktop-NavBar ul{
+    display: flex;
+}
+
+.Web-Desktop-NavBar li{
+   margin-right: 10px;
+}
+
+
+
+
+
+@media screen and (max-width: 425px) {
+    .Desktop{display:none !important;}
+    .container{
+        padding:4px;
+    }
+    .Mobile{display: block !important;}
+
+    .Mobile span{
+        display: block;
+    }
+
+    .navbar{
+        height: fit-content;
+    }
+
+    .Action_Button{
+        height: 42px;
+        line-height: 2.3;
+        font-size: 17px;
+    }
+}
+
+    

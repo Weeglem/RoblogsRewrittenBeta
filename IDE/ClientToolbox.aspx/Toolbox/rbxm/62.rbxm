@@ -1,0 +1,112 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="HopperBin" referent="RBX0">
+		<Properties>
+			<bool name="Active">false</bool>
+			<token name="BinType">0</token>
+			<string name="Name">Ghostwalk</string>
+			<Content name="TextureId"><url>rbxasset://Textures\HalloweenGhost.png</url></Content>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="Script" referent="RBX1">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Ghostwalk</string>
+				<ProtectedString name="Source">print(&quot;Ghostwalker loaded&quot;)
+
+bin = script.Parent
+
+walking = false
+reloadtime = 0
+
+local thrust = Instance.new(&quot;BodyVelocity&quot;)
+
+function makeMeGhostly(trans)
+	local char = game.Players.LocalPlayer.Character
+
+	char.Head.Transparency = trans
+	char.Torso.Transparency = trans
+
+	char:findFirstChild(&quot;Left Leg&quot;).Transparency = trans
+	char:findFirstChild(&quot;Right Leg&quot;).Transparency = trans
+	char:findFirstChild(&quot;Left Arm&quot;).Transparency = trans
+	char:findFirstChild(&quot;Right Arm&quot;).Transparency = trans
+
+end
+
+function onStart()
+	print(&quot;start walking&quot;)
+	walking = true
+	reloadtime = 8.0
+	makeMeGhostly(.5)
+	
+	thrust.Parent = game.Players.LocalPlayer.Character.PrimaryPart
+	
+	thrust.velocity = Vector3.new(0,5,0)
+	thrust.maxForce = Vector3.new(0,4e+003,0) 
+	
+	local sound = game.Players.LocalPlayer.Character.PrimaryPart:findFirstChild(&quot;GhostSound&quot;)
+	if sound == nil then 
+		sound = Instance.new(&quot;Sound&quot;)
+		sound.Name = &quot;GhostSound&quot;
+		sound.SoundId = &quot;rbxasset://sounds\\HalloweenGhost.wav&quot;
+		sound.Parent = game.Players.LocalPlayer.Character.PrimaryPart
+	end
+	sound:play()
+
+end
+
+function onEnd()
+	print(&quot;stop walking&quot;)
+	walking = false
+	makeMeGhostly(0)
+	thrust.Parent = nil
+	wait(reloadtime)
+	reloadtime = 0
+end
+
+function onButton1Down(mouse)
+	if reloadtime &gt; 0 then return end
+	if walking == true then return end
+	
+	onStart()
+	mouse.Icon = &quot;rbxasset://textures\\ArrowFarCursor.png&quot;
+
+	local time = 0
+	while walking == true do
+		--onWalk()
+		wait(.05)
+		time = time + .05
+		if time &gt; 7.0 then onButton1Up(mouse) end
+	end
+end
+
+function onButton1Up(mouse)
+	onEnd()
+	mouse.Icon = &quot;rbxasset://textures\\ArrowCursor.png&quot;
+end
+
+function onSelected(mouse)
+	print(&quot;ghostwalker selected&quot;)
+	if reloadtime &gt; 0 then
+		mouse.Icon = &quot;rbxasset://textures\\ArrowFarCursor.png&quot;
+	else
+		mouse.Icon = &quot;rbxasset://textures\\ArrowCursor.png&quot;
+	end
+	mouse.Button1Down:connect(function() onButton1Down(mouse) end)
+	mouse.Button1Up:connect(function() onButton1Up(mouse) end)
+end
+
+bin.Selected:connect(onSelected)
+
+
+
+
+</ProtectedString>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

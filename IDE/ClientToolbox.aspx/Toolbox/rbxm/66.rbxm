@@ -1,0 +1,134 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="HopperBin" referent="RBX0">
+		<Properties>
+			<bool name="Active">false</bool>
+			<token name="BinType">0</token>
+			<string name="Name">Snowball</string>
+			<Content name="TextureId"><url>rbxasset://Textures\Snowball.png</url></Content>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="Script" referent="RBX1">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">CannonScript</string>
+				<ProtectedString name="Source">print(&quot;Cannon script loaded&quot;)
+bin = script.Parent
+function fire(v)
+	sound = Instance.new(&quot;Sound&quot;)
+	sound.SoundId = &quot;rbxasset://sounds\\short spring sound.wav&quot;
+	sound.Parent = script.Parent
+	sound:play()
+
+	local missile = Instance.new(&quot;Part&quot;)
+	local spawnPos = game.Players.LocalPlayer.Character.PrimaryPart.Position
+	spawnPos  = spawnPos + (v * 5)
+	missile.Position = spawnPos
+	missile.Size = Vector3.new(2,2,2)
+	missile.Velocity = v * 200
+	missile.BrickColor = BrickColor.new(1,1,1) -- BrickColor.new(26)
+	missile.Shape = 0
+	missile.BottomSurface = 0
+	missile.TopSurface = 0
+	missile.Name = &quot;Cannon Shot&quot;
+	missile.Elasticity = 0
+	missile.Reflectance = .1
+	missile.Friction = 50
+
+	local new_script = script.Parent.CannonBall:clone()
+	new_script.Disabled = false
+	new_script.Parent = missile
+
+	local creator_tag = Instance.new(&quot;ObjectValue&quot;)
+	creator_tag.Value = game.Players.LocalPlayer
+	creator_tag.Name = &quot;creator&quot;
+	creator_tag.Parent = missile
+	missile.Parent = game.Workspace
+end
+
+enabled = true
+function onButton1Down(mouse)
+	if not enabled then
+		return
+	end
+
+	enabled = false
+
+	mouse.Icon = &quot;rbxasset://textures\\GunWaitCursor.png&quot;
+	-- find the best cf
+	local cf = mouse.Hit
+	local v = cf.lookVector
+	fire(v)
+	wait(2)
+	mouse.Icon = &quot;rbxasset://textures\\GunCursor.png&quot;
+	enabled = true
+end
+
+function onSelected(mouse)
+	print(&quot;cannon selected&quot;)
+	mouse.Icon = &quot;rbxasset://textures\\GunCursor.png&quot;
+	mouse.Button1Down:connect(function() 
+		onButton1Down(mouse) 
+	end)
+end
+
+bin.Selected:connect(onSelected)</ProtectedString>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX2">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">CannonBall</string>
+				<ProtectedString name="Source">ball = script.Parent
+damage = 25
+function onTouched(hit)
+	local humanoid = hit.Parent:findFirstChild(&quot;Humanoid&quot;)
+	if humanoid~=nil then
+		tagHumanoid(humanoid)
+		humanoid.Health = humanoid.Health - damage
+		wait(2)
+		untagHumanoid(humanoid)
+		connection:disconnect()
+	else
+		damage = damage / 2
+		if damage &lt; 0.1 then
+			connection:disconnect()
+		end
+	end
+end
+
+function tagHumanoid(humanoid)
+	-- todo: make tag expire
+	local tag = ball:findFirstChild(&quot;creator&quot;)
+	if tag ~= nil then
+		local new_tag = tag:clone()
+		new_tag.Parent = humanoid
+	end
+end
+
+function untagHumanoid(humanoid)
+	if humanoid ~= nil then
+		local tag = humanoid:findFirstChild(&quot;creator&quot;)
+		if tag ~= nil then
+			tag.Parent = nil
+		end
+	end
+end
+
+connection = ball.Touched:connect(onTouched)
+r = game:service(&quot;RunService&quot;)
+t, s = r.Stepped:wait()
+d = t + 10.0 - s
+while t &lt; d do
+	t = r.Stepped:wait()
+end
+ball.Parent = nil</ProtectedString>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

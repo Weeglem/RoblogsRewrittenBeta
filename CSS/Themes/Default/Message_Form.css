@@ -1,0 +1,110 @@
+.Message_Container{
+    margin-top:10px;
+}
+
+.Message_Flex{
+    border:1px solid black;
+    padding:20px;
+    display:flex;
+    width: 60%;
+    margin:0 auto;
+}
+
+.SuccessMessage{
+    width: 60%;
+    padding:20px;
+    margin: 0 auto;
+    display: none;
+}
+
+.SuccessMessage p, .SuccessMessage h2{
+    margin-bottom: 8px;
+}
+
+.Message_Details{
+    width: 30%;
+    text-align: left;
+}
+
+label{
+    display:block;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom:5px;
+}
+
+.Message_Content{
+    margin:0 auto;
+    width:70%;
+}
+
+.Input_Container{
+    display: grid;
+    margin-bottom:3px;
+}
+
+input,textarea,select{ 
+    margin: 0;
+    padding: 0;   
+}
+
+.Actions{
+    text-align:right;
+    padding:0;
+    margin-top:10px;
+    margin-bottom: 0;
+}
+
+.Actions button{
+    margin-left:8px;
+    margin-right: 0;
+}
+
+.Mimi{
+    font-size: 12px;
+    margin-bottom:5px;
+}
+
+h1{
+    margin-bottom: 5px;
+}
+
+.Message-Title{
+    font-weight:bold;
+    text-align:left;
+}
+
+.Input_Container{
+    margin-bottom:5px;
+}
+
+textarea{
+    width:100%;
+    background:none;
+    padding:3px;
+    resize: vertical;
+}
+
+@media screen and (max-width: 425px) {
+    .Message_Flex{    flex-direction: column; width:100%;}
+    .Message_Details { width: 100%; text-align: left; }
+    .Message_Content { width: 100%; margin-top:10px; }
+    .Message_Container { width: 86%; }
+    button{
+        width: 100%;
+        margin:10px 0;
+        display:block;
+    }
+
+    .Actions{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .Actions button{
+        
+        margin-left:0px;
+        margin-right: 0;
+    }
+}

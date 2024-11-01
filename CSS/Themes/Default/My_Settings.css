@@ -1,0 +1,52 @@
+.SettingsContainer{
+    margin:10px auto;
+    padding:8px;
+    display: flex;
+    width: 700px;
+}
+
+.Left_Panel{
+    text-align: left;
+    width: 25%;
+}
+
+.Right_Panel{
+text-align: left;
+}
+
+#PageTitle{
+    margin-bottom: 10px;
+}
+
+form{
+    margin-bottom: 10px;
+}
+
+.Input_Container{
+    display: block;
+}
+
+.Input_Container label{
+    display: inline-block;
+    
+}
+.TextAreaBox label{
+    display: block;
+}
+
+label{
+    width: 160px; 
+}
+
+fieldset{
+    margin-top: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ul li {
+    margin: 8px 0;
+}
+

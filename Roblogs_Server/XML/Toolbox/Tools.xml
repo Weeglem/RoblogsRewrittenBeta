@@ -1,0 +1,104 @@
+<models>
+    <model>
+        <displayname>Delete</displayname>
+        <thumbnail>52</thumbnail>
+        <modelname>52</modelname>
+    </model>
+
+    <model>
+        <displayname>Grab</displayname>
+        <thumbnail>53</thumbnail>
+        <modelname>53</modelname>
+    </model>
+
+    <model>
+        <displayname>Copy</displayname>
+        <thumbnail>54</thumbnail>
+        <modelname>54</modelname>
+    </model>
+
+    <model>
+        <displayname>Sword</displayname>
+        <thumbnail>55</thumbnail>
+        <modelname>55</modelname>
+    </model>
+
+    <model>
+        <displayname>Rocket Launcher</displayname>
+        <thumbnail>56</thumbnail>
+        <modelname>56</modelname>
+    </model>
+
+    <model>
+        <displayname>Trowel</displayname>
+        <thumbnail>57</thumbnail>
+        <modelname>57</modelname>
+    </model>
+
+    <model>
+        <displayname>Timebomb</displayname>
+        <thumbnail>58</thumbnail>
+        <modelname>58</modelname>
+    </model>    
+
+    <model>
+        <displayname>Paintball Gun</displayname>
+        <thumbnail>59</thumbnail>
+        <modelname>59</modelname>
+    </model>
+
+    <model>
+        <displayname>Superball</displayname>
+        <thumbnail>60</thumbnail>
+        <modelname>60</modelname>
+    </model>
+
+    <model>
+        <displayname>Slingshot</displayname>
+        <thumbnail>61</thumbnail>
+        <modelname>61</modelname>
+    </model>
+
+    <model>
+        <displayname>Ghostwalk</displayname>
+        <thumbnail>62</thumbnail>
+        <modelname>62</modelname>
+    </model>
+
+    <model>
+        <displayname>Pumkin Bomb</displayname>
+        <thumbnail>63</thumbnail>
+        <modelname>63</modelname>
+    </model>
+
+    <model>
+        <displayname>Skullshot</displayname>
+        <thumbnail>64</thumbnail>
+        <modelname>64</modelname>
+    </model>
+
+    <model>
+        <displayname>Soul Asylum</displayname>
+        <thumbnail>65</thumbnail>
+        <modelname>65</modelname>
+    </model>
+
+    <model>
+        <displayname>Snowballs</displayname>
+        <thumbnail>66</thumbnail>
+        <modelname>66</modelname>
+    </model>
+
+    <model>
+        <displayname>Rocket boots</displayname>
+        <thumbnail>67</thumbnail>
+        <modelname>67</modelname>
+    </model>
+
+    <model>
+        <displayname>Multi rockets</displayname>
+        <thumbnail>68</thumbnail>
+        <modelname>68</modelname>
+    </model>
+
+</models>

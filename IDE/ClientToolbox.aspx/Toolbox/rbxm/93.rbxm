@@ -1,0 +1,218 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Model" referent="RBX0">
+		<Properties>
+			<token name="Controller">0</token>
+			<bool name="ControllerFlagShown">true</bool>
+			<CoordinateFrame name="ModelInPrimary">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<string name="Name">toaster1</string>
+			<Ref name="PrimaryPart">RBX1</Ref>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="Part" referent="RBX2">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">18</int>
+				<CoordinateFrame name="CFrame">
+					<X>2</X>
+					<Y>1.3938818</Y>
+					<Z>-13.8000031</Z>
+					<R00>1</R00>
+					<R01>2.37118238e-005</R01>
+					<R02>-7.24885979e-007</R02>
+					<R10>-7.23338758e-007</R10>
+					<R11>-1.4692564e-005</R11>
+					<R12>-1</R12>
+					<R20>-2.38307439e-005</R20>
+					<R21>1</R21>
+					<R22>-1.45735758e-005</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<bool name="CastsShadows">true</bool>
+				<token name="Controller">0</token>
+				<bool name="ControllerFlagShown">true</bool>
+				<bool name="Cullable">true</bool>
+				<bool name="DraggingV1">false</bool>
+				<float name="Elasticity">0.5</float>
+				<token name="FormFactor">2</token>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<string name="Name">toast</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">1</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>50</Y>
+					<Z>0</Z>
+				</Vector3>
+				<bool name="archivable">true</bool>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>2</X>
+					<Y>0.400000006</Y>
+					<Z>2</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBX1">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">2</int>
+				<CoordinateFrame name="CFrame">
+					<X>1.5</X>
+					<Y>1.20000005</Y>
+					<Z>-15</Z>
+					<R00>-1</R00>
+					<R01>0</R01>
+					<R02>-0</R02>
+					<R10>-0</R10>
+					<R11>1</R11>
+					<R12>-0</R12>
+					<R20>-0</R20>
+					<R21>0</R21>
+					<R22>-1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<bool name="CastsShadows">true</bool>
+				<token name="Controller">0</token>
+				<bool name="ControllerFlagShown">true</bool>
+				<bool name="Cullable">true</bool>
+				<bool name="DraggingV1">false</bool>
+				<float name="Elasticity">0.5</float>
+				<token name="FormFactor">2</token>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<string name="Name">toaster</string>
+				<float name="Reflectance">0.200000003</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<bool name="archivable">true</bool>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>3</X>
+					<Y>1.60000002</Y>
+					<Z>2</Z>
+				</Vector3>
+			</Properties>
+			<Item class="Decal" referent="RBX3">
+				<Properties>
+					<token name="Face">1</token>
+					<string name="Name">toaster</string>
+					<float name="Shiny">20</float>
+					<float name="Specular">0</float>
+					<Content name="Texture" mimeType="image/png"><binary xmime:contentType="image/png">iVBORw0KGgoAAAANSUhEUgAAAJwAAABFCAIAAAAw6xj9AAAABGdBTUEAALGPC/xhBQAAAXZJ
+REFUeF7t2rFtA0EUA9FT/01taZJyRYfBjUCMc9P8fF470eucc/U1tsAHta+xBa6xezrn+6e3
+FfYWCHXPtJc6aBpqqIsLDN7U/9RQBxcYPKmXGurgAoMn9VJDHVxg8KReaqiDCwye1EsNdXCB
+wZN6qaEOLjB4Ui811MEFBk/CXurY5/GePAf/tQr1Sb7fPytU3wBvECo+qR8Yqm+ANwgVn9QP
+DNU3wBuEik/qB4bqG+ANQsUn9QND9Q3wBqHik/qBofoGeINQ8Un9wFB9A7xBqPikfmCovgHe
+IFR8Uj8wVN8AbxAqPqkfGKpvgDf4X1S8WYG3F8A+eHa7Qd+ILxAqPqkfGKpvgDcIFZ/UDwzV
+N8AbhIpP6geG6hvgDULFJ/UDQ/UN8Aah4pP6gaH6BniDUPFJ/cBQfQO8Qaj4pH5gqL4B3iBU
+fFI/MFTfAG8QKj6pHxiqb4A3CBWf1A8M1TfAG4SKT+oHhuob4A1CxSf1A0P1DfAGb3Vj4UlD
+2S5MAAAAAElFTkSuQmCC</binary></Content>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+			<Item class="Decal" referent="RBX4">
+				<Properties>
+					<token name="Face">0</token>
+					<string name="Name">toaster2</string>
+					<float name="Shiny">20</float>
+					<float name="Specular">0</float>
+					<Content name="Texture" mimeType="image/png"><binary xmime:contentType="image/png">iVBORw0KGgoAAAANSUhEUgAAAFsAAABFCAIAAACqiA0lAAAABGdBTUEAALGPC/xhBQAAAQFJ
+REFUeF7t2DEOgkAQQFG9uUfjaJrYGCw+kMxq8WgXED5vp/C+bdvN8VngVcTxWeAmx66AInsS
+iihSY4IRRhipAoxUIXOEEUaqACNVyBxh5CdGFvzfUu91fX1k1yjytRXnk1w3UFcysmSyzhMZ
++ZDvNiO3VsQcyeE0j6Qe4fq6XWOylh5Glhipz7A9Dhx5k6ETRozksx4I8sibDJ2giF1TtBhh
+hJEqwEgVMkcYYaQKMFKFzBFGGKkCjFQhc4QRRqoAI1XIHGGEkSrwH0bOPuXK838zR1a+4dnf
+UsSuKTOMMMJIFWCkCpkjjDBSBRipQuYII4xUAUaqkDnCCCNVYL/+BLp+aHAbTTzWAAAAAElF
+TkSuQmCC</binary></Content>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX5">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="Source">humanoid = nil&#13;&#10;&#13;&#10;function onTouched(part)&#13;&#10;&#9;if part.Parent ~= nil then&#13;&#10;&#9;local h = part.Parent:findFirstChild(&quot;Humanoid&quot;)&#13;&#10;&#9;&#9;if h~=nil then&#13;&#10;&#9;&#9;&#9;if isenabled~=0 then&#13;&#10;&#9;&#9;&#9;&#9;if h==humanoid then&#13;&#10;&#9;&#9;&#9;&#9;&#9;return&#13;&#10;&#9;&#9;&#9;&#9;end&#13;&#10;&#13;&#10;&#9;&#9;&#9;&#9;local toast=script.Parent.toast:clone()&#13;&#10;&#9;&#9;&#9;&#9;isenabled=0&#13;&#10;&#9;&#9;&#9;&#9;toast.Parent=game.Workspace&#13;&#10;&#9;&#9;&#9;&#9;toast.Transparency=0&#13;&#10;&#9;&#9;&#9;&#9;toast.Locked=false&#13;&#10;&#9;&#9;&#9;&#9;toast.Anchored=false&#13;&#10;&#9;&#9;&#9;&#9;toast.CanCollide=false&#13;&#10;&#9;&#9;&#9;&#9;toast.RotVelocity=Vector3.new(math.random(1,10)/5,math.random(1,10)/5,math.random(1,10)/5)&#13;&#10;----TODO&gt;: toast.position&#13;&#10;&#9;&#9;&#9;&#9;local toastrot=CFrame.new(0, 0, 0, 1, 0, 0, 0, 0, -1, 0, 1, 0)&#13;&#10;&#9;&#9;&#9;&#9;toast.CFrame = script.Parent.toaster.CFrame * CFrame.new(Vector3.new(.75,1,0)) * toastrot&#13;&#10;&#9;&#9;&#9;&#9;wait(0.4)&#13;&#10;&#9;&#9;&#9;&#9;toast.CanCollide=true&#13;&#10;&#13;&#10;&#9;&#9;&#9;&#9;wait(1)&#13;&#10;&#9;&#9;&#9;&#9;isenabled=1&#13;&#10;&#13;&#10;&#9;&#9;&#9;&#9;--IF YOU WANT TOAST TO DISAPPEAR AFTER A WHILE, REMOVE THE -- before next two lines.&#13;&#10;&#9;&#9;&#9;&#9;&#13;&#10;&#9;&#9;&#9;&#9;--wait(120)&#13;&#10;&#9;&#9;&#9;&#9;--toast:remove()&#13;&#10;&#9;&#9;&#9;&#9;&#13;&#10;&#13;&#10;&#9;&#9;&#9;end&#13;&#10;&#9;&#9;end&#13;&#10;&#9;end&#13;&#10;end&#13;&#10;&#13;&#10;&#13;&#10;script.Parent.toaster.Touched:connect(onTouched)</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

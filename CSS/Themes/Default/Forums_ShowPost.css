@@ -1,0 +1,82 @@
+.ForumRow{
+    min-height: 186px;
+}
+
+.ForumRow-Details{
+    font-size: 11px;
+}
+
+.ForumRow-Author{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.Left{
+    width: 15%;
+    border:0.5px solid white !important;
+}
+
+.Right{
+    width: 100%;
+    border:0.5px solid white !important;
+}
+
+tbody,table{
+    width:100%;   
+}
+
+
+td{
+    text-align: left;
+    
+}
+
+li a .ForumRow-Details .Link{
+    color:black !important;
+}
+
+.ForumRow-Brief{
+    background-color: #D4D9EC;
+}
+
+.ForumRow-Brief li{
+    margin-bottom:3px;
+}
+
+th span{
+    margin-left: 3px;
+}
+
+.ForumText-Body,.ForumRow-Brief,.Left ul{
+    padding:3px !important;
+}
+
+.Left ul li{
+    line-height: 17px;
+}
+
+.ForumButtons-Action{
+    margin-top: 15px;
+}
+
+.ForumButtons-Action span{
+    margin-left: 0;
+    width: 70px;
+}
+
+.Report{
+    line-height: 0;
+    font-size: 12px;
+}
+
+.FollowThread{
+    color:#062c6e;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.FollowThread label
+{
+    vertical-align: top;
+}
+

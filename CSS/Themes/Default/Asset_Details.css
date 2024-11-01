@@ -1,0 +1,192 @@
+
+
+.Asset_Details li{
+    font-size: 13px;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.Asset_Details{
+    float:left;
+}
+
+.Asset_Details_Div{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Left{
+    text-align: left;
+    padding:8px;
+    max-width: 380px;
+    min-width: 280px;
+}
+
+.Right{
+    height: fit-content;
+    max-width: 550px;
+}
+
+.See_More{
+    font-size: 12px;
+    text-align: left;
+    margin-top: 5px;
+    width: fit-content;
+}
+
+.Asset_Container{
+    width: 100%;
+    margin:10px auto;
+}
+
+.MainFrame{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.SubFrame{
+    margin-top: 15px;
+    padding:10px;
+}
+
+.Thumbnail{
+    width: 480px;
+    height: 380px;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 400px;
+  }
+
+.Thumbnail img{
+    background: white;
+}
+
+#Description{
+    font-size: 12px;
+}
+
+.Frame{
+    text-align: left;
+    display:block;
+}
+
+
+.Comment{
+    margin-bottom: 15px;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.CommentAvatar{
+    /*float:left;*/
+}
+
+.Comment-Title{
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.CommentInfo{
+    width:100%;
+}
+
+
+li{
+    text-align: left;
+}
+
+.CommentInfo ul li textarea{
+    width: 95%;
+}
+
+.Comment-Text{
+    font-size: 12px;
+    text-align: left;
+}
+
+.Pagination-Block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.NavLink{
+    font-size: 14px;
+    text-decoration: none;
+    color:blue;
+}
+
+
+.NavLink:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+#OpenRobloxStudio{
+    display: none;
+}
+
+.Thumbs_Flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Thumbs_Flex img{
+    margin:5px 3px;
+}
+
+.LikeButton_Text{
+    position: relative;
+    top: -2px;
+}
+
+.Settings{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.Asset_Details_Info{
+    display: flex;
+}
+
+.Main_Flex_Info{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 425px) {
+    .MainFrame{   
+        flex-direction: column-reverse; 
+        justify-content: space-around; 
+    }
+
+    .Asset_Container{
+        width: 100%;
+    }
+
+    .Left{
+        margin-top:15px;
+        padding:8px;
+        max-width: 100%;
+    }
+
+    .CommentAvatar{
+        display:none;
+    }
+
+    .Thumbnail{
+        width: 100%;
+        height: auto;
+    }
+
+}

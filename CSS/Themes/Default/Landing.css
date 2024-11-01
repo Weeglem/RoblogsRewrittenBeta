@@ -1,0 +1,34 @@
+.Landing-Login{
+    width:200px;
+}
+
+.Landing-Login form{
+    padding:15px 10px;
+}
+
+.Landing-Login form .Actions{
+    text-align: center;
+}
+
+.Landing-Login form .Actions button{
+    margin-top:10px;
+}
+
+.NewACC{
+    display:block;
+    margin: 5px auto;
+    width: fit-content;
+    font-size: 13px;
+}
+
+
+.Landing-MainTopic{
+    float:left;
+}
+
+
+.Landing-Main{
+    display:flex;
+    padding:3px;
+    width: fit-content;
+}

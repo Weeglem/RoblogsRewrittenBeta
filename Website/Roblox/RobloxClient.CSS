@@ -1,0 +1,138 @@
+html{
+    font-family: tahoma, helvetica, sans-serif;
+}
+
+.Hidden{
+    display: none;
+}
+
+h1,h2,h3{
+    font-size: 11px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+h2,h3{
+    margin-bottom: 10px;
+}
+
+body{
+    font-size:12px;
+    margin:8px;
+}
+
+label{
+    text-align: right;
+    padding-right: 5px;
+}
+
+.label-Form{
+    width:70px;
+    display:inline-block;
+}
+
+.UploadForm{
+    padding:8px;
+    margin:0 auto;
+}
+
+/*Main Menu*/
+
+.GoTobutton{
+    width: 120px;
+}
+
+.GoToInside{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.ButtonGoto-Explain{
+    margin-left: 15px;
+}
+
+
+.GoToInside p
+{
+    margin-bottom:3px;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.FormButtons-Row{
+    display: block;
+    width: 100%;
+}
+
+.TextRight{
+    text-align: right !important;
+}
+
+/*New Item*/
+
+.FormPart{
+    display:flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.Margin13{
+    margin-top:8px;
+}
+
+textarea,input[type=text]
+{   
+    width: 360px;
+}
+
+input[type=checkbox]
+{
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/*Update Item*/
+
+
+ul{
+    list-style-type: none;
+    padding:0;
+}
+
+.UpdateItem-Show{
+    /*overflow-y: scroll;*/
+    height: 220px;
+}
+
+a{
+    color:blue;
+}
+
+.ItemsPagination{
+    display:flex;
+    width: 120px;
+    justify-content: space-between;
+}
+
+.NavLink{
+    display:inline-block;
+    margin:0;
+    font-size:13px;
+    color:blue;
+    cursor: pointer;
+}
+
+.NavLink:hover{
+    text-decoration: underline;
+}
+
+.BottomPagination{
+    display: flex;
+}
+
+
+#UpdateItemButton{
+    float:left;
+    margin-right: 10px;
+}
+

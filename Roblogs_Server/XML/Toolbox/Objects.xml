@@ -1,0 +1,64 @@
+<models>
+    <model>
+        <displayname>Leaderboard</displayname>
+        <thumbnail>scripts</thumbnail>
+        <modelname>16</modelname>
+    </model>
+
+    <model>
+        <displayname>Yellow Flag</displayname>
+        <thumbnail>17</thumbnail>
+        <modelname>17</modelname>
+    </model>
+
+    <model>
+        <displayname>Green Flag</displayname>
+        <thumbnail>18</thumbnail>
+        <modelname>18</modelname>
+    </model>
+
+    <model>
+        <displayname>Blue Flag</displayname>
+        <thumbnail>19</thumbnail>
+        <modelname>19</modelname>
+    </model>
+
+    <model>
+        <displayname>Red Flag</displayname>
+        <thumbnail>20</thumbnail>
+        <modelname>20</modelname>
+    </model>
+
+    <model>
+        <displayname>Neutral Spawn Location</displayname>
+        <thumbnail>21</thumbnail>
+        <modelname>21</modelname>
+    </model>
+
+    <model>
+        <displayname>Green Spawn Location</displayname>
+        <thumbnail>22</thumbnail>
+        <modelname>22</modelname>
+    </model>
+
+    <model>
+        <displayname>Yellow Spawn Location</displayname>
+        <thumbnail>23</thumbnail>
+        <modelname>23</modelname>
+    </model>
+
+    <model>
+        <displayname>Blue Spawn Location</displayname>
+        <thumbnail>24</thumbnail>
+        <modelname>24</modelname>
+    </model>
+
+    <model>
+        <displayname>Red Spawn Location</displayname>
+        <thumbnail>25</thumbnail>
+        <modelname>25</modelname>
+    </model>
+
+
+
+</models>

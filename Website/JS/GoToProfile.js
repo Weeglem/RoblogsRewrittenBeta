@@ -1,0 +1,1 @@
+function GoToProfile(ProfileID){window.location.href = window.location.origin+"/User/?id="+ProfileID}

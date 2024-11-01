@@ -1,0 +1,111 @@
+section{
+    text-align:left;
+}
+
+.Group-Icon{
+    width:150px;
+    height:130px;
+}
+
+.Group-Details ul li{
+    font-size:13px;
+    margin-top:5px;
+}
+
+.Group-CTA ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#Description{
+    font-size: 13px;
+    max-width: 600px;
+}
+
+.Group-CTA{
+    margin-left:10px;
+}
+
+.Group-Brief-Div{
+    display:flex;
+    padding:8px;
+    margin-top:10px;
+}
+
+.Group_Container{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.GroupMessage{
+    text-align: left;
+    border:1px solid black;
+    background-color:bisque;
+    padding:3px;
+    margin-top:5px;
+}
+
+.Group-Buttons{
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#JoinGroup{
+    width: fit-content;
+}
+
+.ElementTitle{
+    font-size:12px;
+}
+
+.Group-Members-Allies-Div figure{
+    margin:0 3px;
+}
+
+.ElementSub{
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+
+/*Wall*/
+
+.Group-Wall-Div{
+    margin-top: 15px;
+    padding:8px;
+}
+
+@media screen and (max-width: 425px) {
+    .Group_Container{width: 100%;}
+
+    .Group-Brief-Div {
+        flex-direction: column;
+    }
+
+    .Group-CTA {
+        margin: 5px 0;
+    }
+
+    #JoinGroup{
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .Group-Details figure img{
+        width: 100%;
+        height: auto;
+    }
+
+    .CardBody figure {
+        margin: 5px 3px;
+    }
+
+    .CardEntry{
+        margin-bottom: 10px;
+    }
+
+
+}

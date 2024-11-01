@@ -1,0 +1,79 @@
+.Search_Window{
+    border: 1px solid black;
+    margin-top:10px;
+}
+
+.Search_Entry{
+    display: flex;
+    justify-content: space-between;
+    padding:5px 0;
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+
+.UserIMG{
+    width: 80px;
+    height: auto;
+}
+
+.Search_User{
+    padding:10px 0;
+}
+
+.Search_User:hover{
+    cursor:pointer;
+    background:#c7d7ef;
+}
+
+.Part1{
+    width: 15%;
+}
+
+.Part2{
+    width: 75%;
+    padding:0 20px;
+}
+
+.Part3{
+    width: 24%;
+}
+
+.Part2 p{
+    font-size: 12px;
+}
+
+.JoinDate{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.Username{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.Description{
+    word-break: break-word;
+}
+
+.Search_User{
+    display: flex;
+}
+
+.AlignVertical{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.PageName{
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 425px) {
+    .Part3{display:none}
+    .Part1 {width:auto;}
+    body{background: white;}
+}

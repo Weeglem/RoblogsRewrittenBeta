@@ -1,0 +1,65 @@
+body{
+    font-family: tahoma, helvetica, sans-serif;
+    background: #eaeaea;
+    padding:70px;
+    padding-top:0;
+}
+
+.Blog_Content{
+    margin:10px 0;
+    background: white;
+    border:1px solid black;
+    padding:10px;
+}
+
+.BlogDetails{
+    font-size: 11px;
+    margin-top: -23px;
+}
+
+.BlogName{
+    font-size: 27px;
+    margin-top: 0;
+}
+
+.BlogBody{
+    font-size:12px;
+}
+
+span{
+    font-size:14px;
+}
+
+h3{
+    background-color: #a1b8d8;
+    text-align: center;
+    height: 40px;
+    margin:0;
+    line-height: 2;
+    color:white;
+    
+}
+
+#CloseWindow{
+    font-weight: bold;
+    font-size:17px;
+    margin:2px;
+}
+
+.Link{
+    text-decoration: none;
+}
+
+.ProfileCreator{
+    color:black;
+}
+
+#CloseWindow:hover, .Link:hover{
+    text-decoration: underline;
+}
+
+header{
+    border:1px solid black;
+    margin:0;
+}
+

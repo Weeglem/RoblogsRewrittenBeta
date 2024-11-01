@@ -1,0 +1,44 @@
+<models>
+    <model>
+        <displayname>Fleeing Bug</displayname>
+        <thumbnail>34</thumbnail>
+        <modelname>34</modelname>
+    </model>
+
+    <model>
+        <displayname>Attacking Bug</displayname>
+        <thumbnail>35</thumbnail>
+        <modelname>35</modelname>
+    </model>
+
+    <model>
+        <displayname>Wimpotron</displayname>
+        <thumbnail>36</thumbnail>
+        <modelname>36</modelname>
+    </model>
+
+    <model>
+        <displayname>Blue figure on scooter</displayname>
+        <thumbnail>37</thumbnail>
+        <modelname>37</modelname>
+    </model>    
+
+    <model>
+        <displayname>Man on scooter</displayname>
+        <thumbnail>38</thumbnail>
+        <modelname>38</modelname>
+    </model>
+
+    <model>
+        <displayname>The hammer</displayname>
+        <thumbnail>39</thumbnail>
+        <modelname>39</modelname>
+    </model>
+
+    <model>
+        <displayname>Spasmotron</displayname>
+        <thumbnail>40</thumbnail>
+        <modelname>40</modelname>
+    </model>
+
+</models>

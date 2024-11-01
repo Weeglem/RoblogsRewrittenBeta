@@ -1,0 +1,90 @@
+.Message_Row{
+    display:flex;
+    text-align: left;
+}
+
+.Messages_Row{
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+.Header_Row{
+    display:flex;
+    border: 1px solid black;
+    border-bottom: none;
+    text-align: left;
+    font-weight: bold;
+}
+
+.Message_Row,.Header_Row{
+    padding:5px 10px;
+}
+
+.Message_Row:hover{
+    background-color: #e5e5e5;
+}
+
+.Button_Col{
+    width: 50px;
+}
+
+.Subject_Col{
+    width: 443px;
+}
+
+.Sender_Col{
+    width: 296px;
+}   
+
+.Date_Col{
+    width: 179px;
+}
+
+
+.Inbox_Container{
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+li{
+    margin: 10px 0;
+}
+
+.Inbox_Options{
+    text-align: left;
+    width: 180px;
+    margin-right: 18px;
+}
+
+.Inbox_Box{
+    width: 80%;
+    
+}
+
+@media screen and (max-width: 425px) {
+
+    .Inbox_Container{
+        flex-direction: column;
+    }
+
+    .Inbox_Options, .Inbox_Box{
+        width: 100%;
+    }
+
+    .Sender_Col{
+        display: none;
+    }
+
+    .Message_Row .Subject_Col{
+        font-size: 14px;
+    }
+
+    .Message_Row .Date_Col{
+        font-size: 13px;
+    }
+}
