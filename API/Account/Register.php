@@ -20,8 +20,8 @@ $Message = array(
 );
 
 $Post_Username = "FionnaMan";
-$Post_Pass = "@Mar624!";
-$Post_PassRepeat = "@Mar624!";
+$Post_Pass = "1234!";
+$Post_PassRepeat = "1234!";
 
 $Database = new Database();
 
